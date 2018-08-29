@@ -24,6 +24,8 @@ class MainWindow(QLabel):
         self.timer.start(500)
         self.updateTime()
 
+        self.resize(500, 200)
+
     def updateTime(self):
         str = QTime.currentTime().toString();
         self.setText(str)
@@ -36,6 +38,7 @@ class MainWindow(QLabel):
                 self.showFullScreen();
 
     def resizeEvent(self, event):
+        print(self.width(), self.height())
         text = self.text()
         h = 0
         w = 0
