@@ -1,4 +1,4 @@
 # EventClock
 
-Simple app for displaying current time
+Simple PyQt5 app for displaying current time
 
